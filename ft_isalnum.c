@@ -3,15 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 15:53:50 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/18 13:45:30 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/05 16:23:42 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief 
+ * Comprueba si el caracter es alfanumerico A-Z / 0-9
+ * 
+ * @param c Caracter
+ * @return int - 0 si es false o 1 si es true
+ */
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))

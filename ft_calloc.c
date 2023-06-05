@@ -3,26 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 11:21:41 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/26 19:56:28 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/05 16:18:24 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /**
  * @brief 
- * creamos un puntero void y le asignamos memoria con la cantidad
- * de elementos que queremos y el tamaño de estos (si queremos 15
- * caracteres tendremos que dar el tamaño de 1 bye que es un caracter)
- * si se produce que el puntero es null no ha podido reservar memoria
- * y devuelve null si no llamo a la funcion bzero que me pone cada
- * posicion de la memoria en zero '\0' y me devuelve el puntero generico
+ * Reservamos memoria con malloc (num_elems * size) si
+ * es NULL la reserva, devolvemos NULL si no, colocamos a '\0'
+ * toda la memoria reservada y devolvemos el puntero genérico
  * 
- * @param num_elements 
- * @param size 
- * @return void* 
+ * @param num_elements cantidad de elementos
+ * @param size el tamaño del tipo de dato
+ * @return void* - puntero generico
  */
 void	*ft_calloc(size_t num_elements, size_t size)
 {
