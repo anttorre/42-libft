@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 21:05:00 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/25 21:33:35 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/05 16:10:07 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,16 @@
 
 /**
  * @brief 
- * tres varialbes una para almacenar el numero otra para guardar el signo
- * y otra para iterar sobre la cadena. En el primer bucle itero sobre los
- * espacios o tabulaciones delante del string, despues compruebo el signo
- * y si es negativo cambio la variable sign a -1, el siguiente bucle itera 
- * sobre los caracteres entre el 0 y el 9 y guarda en num el numero
- * resultante por ejemplo si fuese '1' haria lo siguiente
- * num = 0 * 10 + (49 - 48) una vez acabado retorna el num * sign.
+ * Recorro la cadena saltando los espacios y tabulaciones, luego
+ * compruebo si el caracter es '-' o '+' si es negativo el signo
+ * se pone a negativo, despues comprobamos que los caracteres en
+ * la cadena esten entre '0' y '9' y en la variable num almacenamos
+ * el numero (num = 0 * 10 + (49 - 48); esto da como resultado 1 en
+ * entero) y finalmente devolvemos el numero multiplicado por el
+ * signo.
  * 
- * @param str 
- * @return int 
+ * @param str la string a transformar en entero
+ * @return int -  la string transformada a entero
  */
 int	ft_atoi(const char *str)
 {
