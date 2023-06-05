@@ -6,7 +6,7 @@
 /*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 12:37:42 by anttorre          #+#    #+#             */
-/*   Updated: 2023/06/05 16:25:55 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/05 16:48:34 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
  * @brief 
  * Comprueba si es caracter es imprimible (32 - 126)
  * 
- * @param c Caracter
+ * @param c char | Caracter
  * @return int - 0 si es false 1 si es true
  */
 int	ft_isprint(int c)

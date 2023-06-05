@@ -6,7 +6,7 @@
 /*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 21:05:00 by anttorre          #+#    #+#             */
-/*   Updated: 2023/06/05 16:10:07 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/05 16:44:53 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@
  * entero) y finalmente devolvemos el numero multiplicado por el
  * signo.
  * 
- * @param str la string a transformar en entero
+ * @param str const char * | la string a transformar en entero
  * @return int -  la string transformada a entero
  */
 int	ft_atoi(const char *str)

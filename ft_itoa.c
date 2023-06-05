@@ -3,15 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 18:00:46 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/28 11:28:35 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/05 16:46:09 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/**
+ * @brief 
+ * Cuenta cuantos digitos hay en un número
+ * 
+ * @param n Numero
+ * @return int - cantidad de digitos
+ */
 static int	ft_nbrlen(int n)
 {
 	int	i;
@@ -27,6 +33,19 @@ static int	ft_nbrlen(int n)
 	return (i);
 }
 
+/**
+ * @brief 
+ * Convierte un numero en cadena, obtengo la cantidad de
+ * digitos con nbrlen, hago una reserva de esa cantidad +1
+ * para el '\0', si es negativo en la primera posicion
+ * guardo '-' y cambio el numero a positivo, en la ultima 
+ * posicion pongo '\0' y resto 1 al tamaño luego mientras el
+ * numero no sea 0 guardo en num_length el caracter, divido 
+ * entre 10 y resto 1 al tamaño.
+ * 
+ * @param n int | numero a transformar
+ * @return char* - puntero a la cadena creada o NULL si falla
+ */
 char	*ft_itoa(int n)
 {
 	char	*str;

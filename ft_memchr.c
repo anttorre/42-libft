@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/23 14:10:37 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/25 20:06:02 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/05 16:45:34 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,15 @@
  * @brief 
  * busca un caracter 'c' en 'n' caracteres que le pasemos
  * mientras que 'i' sea menor que la cantidad que le pasamos
- * entra al bucle y comprueba si en contenido del puntero es igual
+ * entra al bucle y comprueba si el contenido del puntero es igual
  * al caracter que buscamos si es asi retorna un puntero generico
- * de 'str' si no suma uno en la 'i' y mueve en 1 la posicion del puntero
- * si no encuentra nada devuelve null
+ * de donde se encuentra el caracter en 'str' si no suma uno en la 'i'
+ * y muevo el puntero 'str' para comprobar el siguiente caracter.
  * 
- * @param s 
- * @param c 
- * @param n 
- * @return void* 
+ * @param s const void * | puntero a una zona en memoria
+ * @param c int | caracter a buscar 
+ * @param n size_t | cantidad de bytes a comprobar
+ * @return void* puntero al caracter o NULL si no encuentra
  */
 void	*ft_memchr(const void *s, int c, size_t n)
 {

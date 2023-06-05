@@ -6,7 +6,7 @@
 /*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 14:31:46 by anttorre          #+#    #+#             */
-/*   Updated: 2023/06/05 16:23:45 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/05 16:49:11 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
  * @brief 
  * Comprueba si el caracter es alfabetico A-Z a-z
  * 
- * @param c Caracter
+ * @param c char | Caracter
  * @return int - 0 si es false 1 si es true
  */
 int	ft_isalpha(int c)

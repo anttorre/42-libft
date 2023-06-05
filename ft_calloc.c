@@ -6,7 +6,7 @@
 /*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 11:21:41 by anttorre          #+#    #+#             */
-/*   Updated: 2023/06/05 16:18:24 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/05 16:49:38 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@
  * es NULL la reserva, devolvemos NULL si no, colocamos a '\0'
  * toda la memoria reservada y devolvemos el puntero genérico
  * 
- * @param num_elements cantidad de elementos
- * @param size el tamaño del tipo de dato
- * @return void* - puntero generico
+ * @param num_elements size_t | cantidad de elementos
+ * @param size size_t | el tamaño del tipo de dato
+ * @return void* - puntero generico o NULL
  */
 void	*ft_calloc(size_t num_elements, size_t size)
 {
