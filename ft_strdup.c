@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 16:36:56 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/26 20:27:39 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 12:55:49 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
  * desde 'i' hasta menos del 'size' y devuelve el puntero a la
  * cadena duplicada.
  * 
- * @param s1 
- * @return char* 
+ * @param s1 const char * | cadena a duplicar
+ * @return char* | puntero a la cadena duplicada
  */
 char	*ft_strdup(const char *s1)
 {

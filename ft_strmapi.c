@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 11:54:18 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/28 12:40:50 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 15:18:17 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,17 @@ char	uppercase(unsigned int index, char c)
 		return (c);
 }
 */
+
+/**
+ * @brief 
+ * reserva memoria para la nueva string, mientras que la cadena
+ * no sea nula '\0' copia en la nueva cadena el caracter pasandole
+ * una funcion a cada caracter y terminandola en '\0'
+ * 
+ * @param s const char * | puntero a la cadena
+ * @param f char | funciona que devuelve el caracter modificado
+ * @return char* | la nueva cadena transformada
+ */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t	s_length;

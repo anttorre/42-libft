@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/21 12:24:40 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/29 12:16:59 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 15:08:39 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@
  * luego se comprueba que el primer caracter de source no sea nulo
  * y ademas que la cantidad de caracteres que se añaden a partir del tamaño
  * que ya contenia el destino sea menor que el size - 1 para reservar un NULO
- * al final de la cadena
+ * al final de la cadena por ultimo añade un caracter nulo para asegurar el
+ * final de la cadena
  * 
  * @param dst buffer de destino
  * @param src buffer con la cadena a concatenar

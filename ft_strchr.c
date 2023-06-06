@@ -3,27 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 11:59:46 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/23 14:09:37 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 12:52:34 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /**
  * @brief 
- * casting de str a char * en la variable s para poder trabajar sobre ella
- * obtengo el tamaño del string para almacenar hasta donde llega el puntero
- * en str_end luego compruebo que mientras el inicio de mi puntero s sea menor
- * o igual que el final del puntero str_end me compara si el contenido en esa 
- * posicion es igual que el caracter que busco y retorno su puntero si no me 
- * mueve una posicion adelante el puntero inicial, 
- * si no encuentra nada devuelve null
+ * obtengo el final de mi puntero con la longitud de la cadena,
+ * mientras que el inicio de mi puntero sea mas pequeño o igual
+ * que el final compruebo si es igual que el caracter y si lo es
+ * devuelvo el puntero 's'
  * 
- * @param str string donde buscar
- * @param c caracter a buscar
- * @return char* - puntero a str donde encontro el caracter
+ * @param str char * | puntero a una cadena
+ * @param c char | caracter a buscar
+ * @return char* - puntero a la cadena donde encontro la primera coincidencia, o NULL
  */
 char	*ft_strchr(const char *str, int c)
 {
