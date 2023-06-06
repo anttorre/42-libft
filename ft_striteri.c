@@ -6,7 +6,7 @@
 /*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 13:27:53 by anttorre          #+#    #+#             */
-/*   Updated: 2023/06/06 13:04:38 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 17:59:00 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-
 
 /* #include <stdio.h>
 int	main(void)

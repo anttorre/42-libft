@@ -6,18 +6,20 @@
 /*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 12:27:37 by anttorre          #+#    #+#             */
-/*   Updated: 2023/06/06 17:11:20 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 17:59:52 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /**
  * @brief 
- * Si la cadena to_find es vacia devuelve la cadena donde iba a buscar la palabra
- * luego mientras que mi 'i' sea menor que la cantidad de caracteres a buscar 'len'
- * y la cadena no sea nula entra al bucle y comprueba que si el caracter es igual que
- * el que busca y 'i' + 'j' sean menor que el tamaño comprueba si el siguiente
- * caracter de 'to_find' es nulo y devuelve la posicion donde encontro la misma cadena
+ * Si la cadena to_find es vacia devuelve la cadena donde 
+ * iba a buscar la palabra * luego mientras que mi 'i' sea menor
+ * que la cantidad de caracteres a buscar 'len' * y la cadena no 
+ * sea nula entra al bucle y comprueba que si el caracter es igual 
+ * que * el que busca y 'i' + 'j' sean menor que el tamaño comprueba
+ * si el siguiente * caracter de 'to_find' es nulo y devuelve la 
+ * posicion donde encontro la misma cadena
  * 
  * @param haystack const char * | cadena donde buscar
  * @param needle const char * | cadena a buscar

@@ -6,7 +6,7 @@
 /*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 11:59:46 by anttorre          #+#    #+#             */
-/*   Updated: 2023/06/06 12:52:34 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 17:58:20 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@
  * 
  * @param str char * | puntero a una cadena
  * @param c char | caracter a buscar
- * @return char* - puntero a la cadena donde encontro la primera coincidencia, o NULL
+ * @return char* - puntero a la cadena donde encontro la primera coincidencia,
+ * o NULL
  */
 char	*ft_strchr(const char *str, int c)
 {
@@ -41,9 +42,12 @@ char	*ft_strchr(const char *str, int c)
 }
 /*
 #include <stdio.h>
+
 int main (void)
 {
-	char *s = "H\0l\0";
+	char	*s;
+
+	s = "H\0l\0";
 	
 	printf("%p", ft_strchr(s, '\0'));
 }
