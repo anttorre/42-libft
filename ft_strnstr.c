@@ -3,33 +3,26 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/25 12:27:37 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/26 14:45:22 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 17:11:20 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /**
  * @brief 
- * Si la cadena a buscar es nula devuelve un puntero a la cadena
- * donde iba a buscar, mientras que 'i' sea menor que
- * la cantidad de caracteres a buscar y la primera posicion
- * de la cadena no contenga un nulo entra en el bucle y pone 'j' a 0
- * que servira para los caracteres de la cadena 'to_find', entra en el
- * segundo bucle y comprueba que el caracter siguiente de 'str' no sea 
- * nulo, que el caracter de 'to_find' no sea nulo, que el caracter que compara
- * con 'to_find' sean iguales y que no exceda de la cantidad de caracteres
- * que buscara, si se cumple entra en el bucle y comprueba que la siguiente
- * posicion de 'to_find' sea nula y si es nula ha encontrado lo que buscaba
- * y devuelve su puntero, si no siguen iterando y si no encuentra nada
- * devuelve NULL
+ * Si la cadena to_find es vacia devuelve la cadena donde iba a buscar la palabra
+ * luego mientras que mi 'i' sea menor que la cantidad de caracteres a buscar 'len'
+ * y la cadena no sea nula entra al bucle y comprueba que si el caracter es igual que
+ * el que busca y 'i' + 'j' sean menor que el tamaño comprueba si el siguiente
+ * caracter de 'to_find' es nulo y devuelve la posicion donde encontro la misma cadena
  * 
- * @param haystack 
- * @param needle 
- * @param len 
- * @return char* 
+ * @param haystack const char * | cadena donde buscar
+ * @param needle const char * | cadena a buscar
+ * @param len size_t | cantidad de caracteres a buscar
+ * @return char* | puntero a donde empieza la coincidencia
  */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

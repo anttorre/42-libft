@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/22 14:45:45 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/23 14:09:24 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 17:11:52 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,9 @@
  * si no le resto 1 a la posicion de mi puntero
  * si no encuentra el caracter retorna NULL
  * 
- * @param str string en el que buscar
- * @param c caracter a buscar
- * @return char* - puntero al caracter encontrado
+ * @param str const char * | string en el que buscar
+ * @param c int | caracter a buscar
+ * @return char* | puntero al caracter encontrado
  */
 char	*ft_strrchr(const char *str, int c)
 {

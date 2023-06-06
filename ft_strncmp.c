@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/23 12:24:35 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/25 12:05:58 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 17:05:30 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@
  * significa que no encontro diferencias y retorna 0, de lo contrario
  * devuelve la resta en unsigned char de los caracteres
  * 
- * @param s1 
- * @param s2 
- * @param n 
- * @return int 
+ * @param s1 const char * | puntero a una cadena
+ * @param s2 const char * | puntero a una cadena
+ * @param n size_t | cantidad de bytes a comparar
+ * @return int | 0 si son iguales, < 0 si s2 es mayor o > 0 si s1 es mayor
  */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
@@ -51,10 +51,10 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
  * si no aumenta la 'i' y mueve los punteros para comprobar cada caracter
  * si no encuentra diferencias devuelve 0
  * 
- * @param s1 
- * @param s2 
- * @param n 
- * @return int 
+ * @param s1 const char * | puntero a una cadena
+ * @param s2 const char * | puntero a una cadena
+ * @param n size_t | cantidad de bytes a comparar
+ * @return int | 0 si son iguales, < 0 si s2 es mayor o > 0 si s1 es mayor
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
