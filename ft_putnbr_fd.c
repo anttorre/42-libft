@@ -3,15 +3,22 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/28 15:28:29 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/28 15:56:57 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 12:25:33 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
+/**
+ * @brief 
+ * Escrbe en un file descriptor un numero contemplando el
+ * INT_MAX y INT_MIN hace uso de ft_putchar_fd y ft_putstr_fd
+ * 
+ * @param n int | numero a escribir
+ * @param fd int | file descriptor (fichero del sistema normalmente stdout)
+ */
 void	ft_putnbr_fd(int n, int fd)
 {
 	char	aux;

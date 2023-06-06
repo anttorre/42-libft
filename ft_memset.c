@@ -3,25 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 14:24:30 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/24 15:35:01 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 12:20:30 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 /**
- * @brief 
- * casting de tipo void a unsigned char de b,
- * mientras que 'i' sea menor que 'len' copia desde el inicio
- * del puntero hasta 'len' caracteres de 'c', devuelve un
- * puntero generico al primer parámetro
+ * @brief
+ * casting a b en unsigned char para poder trabajar con void *
+ * mientas que 'i' sea menor que 'len' copiamos el caracter 'c'
  * 
- * @param b destino en la memoria
- * @param c caracter a copiar
- * @param len cantidad de caracteres
- * @return void* puntero a un generico
+ * @param b void * | puntero generico a una zona de memoria
+ * @param c int | caracter que queremos poner en la memoria
+ * @param len size_t | cantidad de bytes
+ * @return void* | puntero generico a 'b'
  */
 void	*ft_memset(void *b, int c, size_t len)
 {

@@ -3,15 +3,23 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/19 15:31:19 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/24 15:17:00 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 11:58:56 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief 
+ * 
+ * @param dst void * | destino al que copiar los bytes
+ * @param src const void * | origen desde el que copiar
+ * @param n size_t | cantidad de bytes a copiar
+ * @return void* | puntero generico a dst
+ */
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	char			*d;

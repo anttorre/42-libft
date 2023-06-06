@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anttorre <anttorre@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: anttorre <atormora@gmail.com>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/20 12:14:15 by anttorre          #+#    #+#             */
-/*   Updated: 2023/04/25 21:03:52 by anttorre         ###   ########.fr       */
+/*   Updated: 2023/06/06 12:15:23 by anttorre         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@
  * lo contrario se copia de forma normal de izquierda a derecha empezando
  * desde el principio devuelve un puntero generico al dst
  * 
- * @param dst 
- * @param src 
- * @param len 
- * @return void* 
+ * @param dst void * | destino al que mover los bytes
+ * @param src const void * | origen desde donde mover bytes
+ * @param len size_t | cantidad de bytes a mover
+ * @return void* | puntero generico a dst
  */
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
@@ -52,16 +52,16 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return ((void *) dst);
 }
-/*
-#include <string.h>
+
+/* #include <string.h>
 #include <stdio.h>
 int main ()
 {
 	char s[] = "Antono";
 	char src[] = "Hola";
 	
-	//printf("%s\n", ft_memmove(s+3, s, 2));
-	printf("%s\n", memmove(s, src, 2));
+	printf("%s\n", ft_memmove(src, s, 2));
+	//printf("%s\n", memmove(s, src, 2));
 	//printf("%s\n", memmove(((void *)0), dst, 2));
 	//printf("%s\n", dst);
 }
